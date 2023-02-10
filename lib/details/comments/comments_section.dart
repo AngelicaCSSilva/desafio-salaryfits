@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:salaryfits_test/details/comments/comments_controller.dart';
 import 'package:salaryfits_test/details/comments/components/comment_card.dart';
+import 'package:salaryfits_test/details/commons/components/error_box.dart';
 import 'package:salaryfits_test/model/comments_model.dart';
 
 class CommentsSection extends GetView<CommentsController> {
@@ -19,6 +20,10 @@ class CommentsSection extends GetView<CommentsController> {
           return CommentCard(id: item.id, name: item.name, body: item.body);
         },
       );
+    }, onError: (error) {
+      return ErrorBox(
+          onPressedFunction:
+              controller.getPostsComments(int.parse(Get.parameters['id']!)));
     });
   }
 }
