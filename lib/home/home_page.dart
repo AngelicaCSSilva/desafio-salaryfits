@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:salaryfits_test/home/components/post_card.dart';
 import 'package:salaryfits_test/home/home_controller.dart';
 import 'package:salaryfits_test/model/posts_model.dart';
 
@@ -17,7 +18,7 @@ class HomePage extends GetView<HomeController> {
           itemCount: state.length,
           itemBuilder: (_, index) {
             final PostsModel item = state[index];
-            return Text(item.title);
+            return PostCard(title: item.title, body: item.body, id: item.id);
           },
         );
       }),
