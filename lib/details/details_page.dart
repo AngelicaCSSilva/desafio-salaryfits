@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:salaryfits_test/details/comments/comments_section.dart';
+import 'package:salaryfits_test/details/commons/components/error_box.dart';
 import 'package:salaryfits_test/details/commons/components/title_text.dart';
 import 'package:salaryfits_test/details/details_controller.dart';
 
@@ -30,6 +31,10 @@ class DetailsPage extends GetView<DetailsController> {
           const TitleText(titleText: 'Comentários'),
           const CommentsSection()
         ]);
+      }, onError: (error) {
+        return ErrorBox(
+            onPressedFunction:
+                controller.getPostDetails(int.parse(Get.parameters['id']!)));
       }),
     );
   }
