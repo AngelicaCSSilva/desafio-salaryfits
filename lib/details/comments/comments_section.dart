@@ -11,14 +11,16 @@ class CommentsSection extends GetView<CommentsController> {
   @override
   Widget build(BuildContext context) {
     return controller.obx((state) {
-      return ListView.builder(
-        scrollDirection: Axis.vertical,
-        shrinkWrap: true,
-        itemCount: state.length,
-        itemBuilder: (_, index) {
-          final CommentsModel item = state[index];
-          return CommentCard(id: item.id, name: item.name, body: item.body);
-        },
+      return Expanded(
+        child: ListView.builder(
+          scrollDirection: Axis.vertical,
+          shrinkWrap: true,
+          itemCount: state.length,
+          itemBuilder: (_, index) {
+            final CommentsModel item = state[index];
+            return CommentCard(id: item.id, name: item.name, body: item.body);
+          },
+        ),
       );
     }, onError: (error) {
       return ErrorBox(
