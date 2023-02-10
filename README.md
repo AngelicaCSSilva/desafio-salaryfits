@@ -1,16 +1,18 @@
-# salaryfits_test
+# Desafio Técnico - SalaryFits
 
-A new Flutter project.
+Projeto desenvolvido como solução para o desafio técnico da vaga de Desenvolvedor Júnior da empresa SalaryFits 
 
-## Getting Started
+## Objetivos
 
-This project is a starting point for a Flutter application.
+Criar um aplicativo simples para acessar o conteúdo de uma API e listar em uma página todos os posts retornados no endpoint. Quando o usuário clicar em um dos itens, deve ser encaminhado para um segunda tela com os detalhes daquela postagem.
 
-A few resources to get you started if this is your first Flutter project:
+## Prévias
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+- Página inicial com exibição de todas as postagens;
+- Página de detalhes de cada postagem e comentários feitos por outros usuários;
+
+## Bibliotecas utilizadas
+DIO - Requisições http;
+GetX - Controle de estado, dependências e navegação;

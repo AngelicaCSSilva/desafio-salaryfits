@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:salaryfits_test/details/comments/comments_section.dart';
-import 'package:salaryfits_test/details/commons/components/error_box.dart';
-import 'package:salaryfits_test/details/commons/components/title_text.dart';
-import 'package:salaryfits_test/details/details_controller.dart';
+import 'package:Desafio_SalaryFits/details/comments/comments_section.dart';
+import 'package:Desafio_SalaryFits/details/commons/components/error_box.dart';
+import 'package:Desafio_SalaryFits/details/commons/components/title_text.dart';
+import 'package:Desafio_SalaryFits/details/details_controller.dart';
 
 class DetailsPage extends GetView<DetailsController> {
   const DetailsPage({Key? key}) : super(key: key);

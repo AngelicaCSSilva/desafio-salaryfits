@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.salaryfits_test">
+    package="com.example.Desafio_SalaryFits">
    <application
-        android:label="salaryfits_test"
+        android:label="Desafio_SalaryFits"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

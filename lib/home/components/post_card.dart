@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:salaryfits_test/details/commons/components/title_text.dart';
+import 'package:Desafio_SalaryFits/details/commons/components/title_text.dart';
 
 class PostCard extends StatelessWidget {
   final String title;

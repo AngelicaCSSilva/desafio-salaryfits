@@ -11,23 +11,25 @@ class CommentCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-        child: Column(
-      children: [
-        ListTile(
-          onTap: () => Get.toNamed('/post/$id'),
-          title: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4.0),
-            child: Text(
-              'Usuário: $name',
-              style:
-                  const TextStyle(color: Colors.purple, fontWeight: FontWeight.w500),
+    return Expanded(
+      child: Card(
+          child: Column(
+        children: [
+          ListTile(
+            onTap: () => Get.toNamed('/post/$id'),
+            title: Padding(
+              padding: const EdgeInsets.symmetric(vertical: 4.0),
+              child: Text(
+                'Usuário: $name',
+                style: const TextStyle(
+                    color: Colors.purple, fontWeight: FontWeight.w500),
+              ),
             ),
+            subtitle: Text('"$body"',
+                style: const TextStyle(fontStyle: FontStyle.italic)),
           ),
-          subtitle: Text('"$body"',
-              style: const TextStyle(fontStyle: FontStyle.italic)),
-        ),
-      ],
-    ));
+        ],
+      )),
+    );
   }
 }

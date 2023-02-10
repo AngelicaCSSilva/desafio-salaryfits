@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:salaryfits_test/repository/i_posts_interface.dart';
+import 'package:Desafio_SalaryFits/repository/i_posts_interface.dart';
 
 class DetailsController extends GetxController with StateMixin {
   final IPostsRepository _dio;
