@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:salaryfits_test/details/comments/comments_section.dart';
 import 'package:salaryfits_test/details/commons/components/title_text.dart';
 import 'package:salaryfits_test/details/details_controller.dart';
 
@@ -18,6 +19,16 @@ class DetailsPage extends GetView<DetailsController> {
             title: TitleText(titleText: state.title),
             subtitle: Text(state.body),
           ),
+          const Padding(padding: EdgeInsets.symmetric(vertical: 5.0)),
+          const Divider(
+            height: 5,
+            thickness: 1,
+            indent: 20,
+            endIndent: 20,
+            color: Colors.black,
+          ),
+          const TitleText(titleText: 'Comentários'),
+          const CommentsSection()
         ]);
       }),
     );
