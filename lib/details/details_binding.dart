@@ -1,9 +1,9 @@
 import 'package:dio/dio.dart';
 import 'package:get/get.dart';
-import 'package:salaryfits_test/details/comments/comments_controller.dart';
-import 'package:salaryfits_test/details/details_controller.dart';
-import 'package:salaryfits_test/repository/i_posts_interface.dart';
-import 'package:salaryfits_test/repository/posts_repository.dart';
+import 'package:Desafio_SalaryFits/details/comments/comments_controller.dart';
+import 'package:Desafio_SalaryFits/details/details_controller.dart';
+import 'package:Desafio_SalaryFits/repository/i_posts_interface.dart';
+import 'package:Desafio_SalaryFits/repository/posts_repository.dart';
 
 class DetailsBinding implements Bindings {
   @override

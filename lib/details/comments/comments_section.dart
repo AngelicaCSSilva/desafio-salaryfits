@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:salaryfits_test/details/comments/comments_controller.dart';
-import 'package:salaryfits_test/details/comments/components/comment_card.dart';
-import 'package:salaryfits_test/details/commons/components/error_box.dart';
-import 'package:salaryfits_test/model/comments_model.dart';
+import 'package:Desafio_SalaryFits/details/comments/comments_controller.dart';
+import 'package:Desafio_SalaryFits/details/comments/components/comment_card.dart';
+import 'package:Desafio_SalaryFits/details/commons/components/error_box.dart';
+import 'package:Desafio_SalaryFits/model/comments_model.dart';
 
 class CommentsSection extends GetView<CommentsController> {
   const CommentsSection({Key? key}) : super(key: key);

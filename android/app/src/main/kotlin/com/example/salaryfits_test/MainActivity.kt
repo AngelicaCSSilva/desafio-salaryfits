@@ -1,4 +1,4 @@
-package com.example.salaryfits_test
+package com.example.Desafio_SalaryFits
 
 import io.flutter.embedding.android.FlutterActivity
 

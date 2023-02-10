@@ -1,5 +1,5 @@
-import 'package:salaryfits_test/model/comments_model.dart';
-import 'package:salaryfits_test/model/posts_model.dart';
+import 'package:Desafio_SalaryFits/model/comments_model.dart';
+import 'package:Desafio_SalaryFits/model/posts_model.dart';
 
 abstract class IPostsRepository {
   Future<List<PostsModel>> getAllPosts();

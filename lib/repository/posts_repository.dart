@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
-import 'package:salaryfits_test/model/comments_model.dart';
-import 'package:salaryfits_test/model/posts_model.dart';
-import 'package:salaryfits_test/repository/i_posts_interface.dart';
+import 'package:Desafio_SalaryFits/model/comments_model.dart';
+import 'package:Desafio_SalaryFits/model/posts_model.dart';
+import 'package:Desafio_SalaryFits/repository/i_posts_interface.dart';
 
 class PostsRepository implements IPostsRepository {
   final Dio _dio;

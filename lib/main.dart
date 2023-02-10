@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:salaryfits_test/details/details_binding.dart';
-import 'package:salaryfits_test/details/details_page.dart';
-import 'package:salaryfits_test/home/home_bindings.dart';
-import 'package:salaryfits_test/home/home_page.dart';
+import 'package:Desafio_SalaryFits/home/home_page.dart';
+import 'package:Desafio_SalaryFits/details/details_binding.dart';
+import 'package:Desafio_SalaryFits/details/details_page.dart';
+import 'package:Desafio_SalaryFits/home/home_bindings.dart';
 
 void main() {
   runApp(const MyApp());
