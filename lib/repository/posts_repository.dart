@@ -18,4 +18,14 @@ class PostsRepository implements IPostsRepository {
     }
   }
 
+  @override
+  Future<PostsModel> getPost(int id) async {
+    try {
+      String url = 'https://jsonplaceholder.typicode.com/posts/$id';
+      final response = await _dio.get(url);
+      return PostsModel.fromMap(response.data);
+    } on DioError {
+      rethrow;
+    }
+  }
 }
